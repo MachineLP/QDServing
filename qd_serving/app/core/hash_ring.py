@@ -7,7 +7,7 @@
 -------------------------------------------------
 
 '''
-
+import time 
 import math
 import sys
 from bisect import bisect
@@ -118,7 +118,8 @@ if __name__ == '__main__':
     ring = HashRing(memcache_servers)
     # server = ring.get_node('23434325')
     # ring.get_node( str(time.time()) )
-    server = ring.get_node('dsgdhshtreehtr')
+    # server = ring.get_node('dsgdhshtreehtr')
+    server = ring.get_node( str(time.time()) )
     print (server)
 
 

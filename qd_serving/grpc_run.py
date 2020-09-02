@@ -14,32 +14,34 @@ import grpc
 import json
 import multiprocessing
 from concurrent import futures
-from app.core.models import TTSModel
 from app.utils.logging import logging
+from app.core.hash_ring import HashRing
+from app.grpc.grpc_client import get_res_by_grpc
 from app.grpc import call_ant_pb2_grpc, call_ant_pb2
 
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
-tts_model = TTSModel()
+hash_ring = HashRing( config.GRPC_HOST_LIST )
 
 
 def inference(text):
-    mels, alignment_history, audios = tts_model.do_synthesis(text)
-    return 200, audios.tolist() 
+    grpc_host = hash_ring.get_node( str(time.time()) )
+    data = get_res_by_grpc( grpc_host, text)
+    return 200, data
     # return 200, text
 
 class Greeter(call_ant_pb2_grpc.GreeterServicer):
 
     def SendData(self, request, context):
-        logging.info("start_get_img_feature, url: %s", request.name)
+        logging.info("start_get_data, url: {}".format( request.name) )
         start = time.time()
         code, audios_data = inference(request.name)
         end = time.time()
 
         if code == 0:
-            logging.info("success_get_img_feature, time: %fs, data_size: %d, url: %s", (end - start), len(audios_data), request.name)
+            logging.info("success_get_data, time: {}s, data_size: {}, url: {}".format( (end - start), len(audios_data), request.name) )
         else:
-            logging.error("fail_get_img_feature, time: %fs, data_size: %d, url: %s", (end - start), len(audios_data), request.name)
+            logging.error("fail_get_data, time: {}s, data_size: {}, url: {}".format( (end - start), len(audios_data), request.name) )
 
         return call_ant_pb2.AntReply(code=code, data=audios_data)
 

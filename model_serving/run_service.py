@@ -31,15 +31,15 @@ def inference(text):
 class Greeter(call_ant_pb2_grpc.GreeterServicer):
 
     def SendData(self, request, context):
-        logging.info("start_get_img_feature, url: %s", request.name)
+        logging.info("start_get_data, url: {}".format(request.name) )
         start = time.time()
         code, audios_data = inference(request.name)
         end = time.time()
 
         if code == 0:
-            logging.info("success_get_img_feature, time: %fs, data_size: %d, url: %s", (end - start), len(audios_data), request.name)
+            logging.info("success_get_data, time: {}s, data_size: {}, url: {}".format( (end - start), len(audios_data), request.name) )
         else:
-            logging.error("fail_get_img_feature, time: %fs, data_size: %d, url: %s", (end - start), len(audios_data), request.name)
+            logging.error("fail_get_data, time: {}s, data_size: {}, url: {}".format( (end - start), len(audios_data), request.name) )
 
         return call_ant_pb2.AntReply(code=code, data=audios_data)
 

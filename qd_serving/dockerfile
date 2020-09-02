@@ -1,0 +1,17 @@
+
+FROM python:3.7
+RUN apt-get update
+RUN apt-get install -y zsh tmux wget git libsndfile1
+RUN pip --default-timeout=600 install ipython && \
+    pip --default-timeout=600 install numpy==1.19.0 -i https://pypi.tuna.tsinghua.edu.cn/simple && \
+    pip --default-timeout=600 install pandas==1.0.5 -i https://pypi.tuna.tsinghua.edu.cn/simple && \
+    pip --default-timeout=600 install flask==1.1.2 -i https://pypi.tuna.tsinghua.edu.cn/simple && \
+    pip --default-timeout=600 install requests==2.23.0 -i https://pypi.tuna.tsinghua.edu.cn/simple && \
+    pip --default-timeout=600 install scipy==1.5.1 -i https://pypi.tuna.tsinghua.edu.cn/simple && \
+
+RUN mkdir /workspace
+WORKDIR /workspace
+
+COPY ./ /workspace
+
+

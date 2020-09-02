@@ -1,0 +1,92 @@
+2020-09-02 18:19:27,456 - root - INFO - exec_day :2020-09-02, exec_hour :18, exec_minute :19
+2020-09-02 18:19:27,456 - root - INFO - -------grpc service start--------
+2020-09-02 18:19:27,456 - root - INFO - [::]:47260
+2020-09-02 18:26:10,758 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:26:10,758 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:27:38,066 - root - INFO - exec_day :2020-09-02, exec_hour :18, exec_minute :27
+2020-09-02 18:27:38,066 - root - INFO - -------grpc service start--------
+2020-09-02 18:27:38,066 - root - INFO - 0.0.0.0:47260
+2020-09-02 18:27:52,754 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:27:52,754 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:28:11,678 - root - INFO - exec_day :2020-09-02, exec_hour :18, exec_minute :28
+2020-09-02 18:28:11,678 - root - INFO - -------grpc service start--------
+2020-09-02 18:28:11,678 - root - INFO - [::]:47260
+2020-09-02 18:28:14,004 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:28:14,004 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:28:18,915 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:28:18,915 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:28:20,561 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:28:20,561 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:28:25,988 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:28:25,988 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:28:39,070 - root - INFO - exec_day :2020-09-02, exec_hour :18, exec_minute :28
+2020-09-02 18:28:39,070 - root - INFO - -------grpc service start--------
+2020-09-02 18:28:39,070 - root - INFO - [::1]:47260
+2020-09-02 18:28:42,956 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:28:42,956 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:28:58,446 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:28:58,446 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/qudian/anaconda3/envs/py37/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "run_service.py", line 27, in SendData
+    code, str_data = inference(request.name)
+ValueError: too many values to unpack (expected 2)
+2020-09-02 18:29:24,196 - root - INFO - exec_day :2020-09-02, exec_hour :18, exec_minute :29
+2020-09-02 18:29:24,197 - root - INFO - -------grpc service start--------
+2020-09-02 18:29:24,197 - root - INFO - [::1]:47260
+2020-09-02 18:29:25,801 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:29:25,801 - root - ERROR - fail_get_img_feature, time: 0.000003s, data_size: 3, url: 你好啊
+2020-09-02 18:29:27,230 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 18:29:27,230 - root - ERROR - fail_get_img_feature, time: 0.000002s, data_size: 3, url: 你好啊
+2020-09-02 19:07:43,132 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 19:07:43,132 - root - ERROR - fail_get_img_feature, time: 0.000003s, data_size: 3, url: 你好啊
+2020-09-02 19:07:44,700 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 19:07:44,701 - root - ERROR - fail_get_img_feature, time: 0.000002s, data_size: 3, url: 你好啊
+2020-09-02 20:13:12,491 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 20:13:12,493 - root - ERROR - fail_get_img_feature, time: 0.000028s, data_size: 3, url: 你好啊
+2020-09-02 20:13:14,002 - root - INFO - start_get_img_feature, url: 你好啊
+2020-09-02 20:13:14,002 - root - ERROR - fail_get_img_feature, time: 0.000002s, data_size: 3, url: 你好啊
+2020-09-02 20:13:21,687 - root - INFO - exec_day :2020-09-02, exec_hour :20, exec_minute :13

@@ -58,7 +58,7 @@ class TTSModel():
         return input_ids
 
 
-    def do_synthesis(self, input_text):
+    def predict(self, input_text):
         input_text = self.tts_pause.add_pause(input_text)
         print ("input_text>>>>", input_text)
         logging.info( "[TTSModel] [do_synthesis] input_text:{}".format( input_text ) )

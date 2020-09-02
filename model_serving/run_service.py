@@ -24,7 +24,7 @@ tts_model = TTSModel()
 
 
 def inference(text):
-    mels, alignment_history, audios = tts_model.do_synthesis(text)
+    mels, alignment_history, audios = tts_model.predict(text)
     return 200, audios.tolist() 
     # return 200, text
 

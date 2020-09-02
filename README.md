@@ -31,3 +31,6 @@ docker-compose -f project_dir/start/docker-compose.yml up -d
 or
 docker-compose -f project_dir/docker/release/docker-compose.yml up -d
 ```
+
+![QDModelServing](./QDModelServing.jpg)
+

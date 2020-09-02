@@ -58,7 +58,7 @@ def serve(port):
         server.stop(0)
 
 
-HTTP_PORT = 47260
+HTTP_PORT = 9959
 if len(sys.argv) > 1:
     HTTP_PORT = sys.argv[1]
 

@@ -3,24 +3,24 @@
 ### 线上服务器
 ```
 .
-├── model_serving             # gpu算法模块（gRPC服务）
+├── model_serving             # ml模型服务（gRPC服务）
 │   ├── app
-│   ├── docker
-│   ├── docs
-│   ├── log
+│   ├── conf
+│   ├── logs
 │   ├── README.md
 │   ├── run_client.py
 │   ├── run_service.py
 │   └── test.py
-├── qd_serving                # 数据模块（gRPC服务）
+├── qd_serving                # 负载均衡、业务服务（flask/gRPC服务）
 │   ├── app
-│   ├── docker
-│   ├── docs
-│   ├── log
+│   ├── conf
+│   ├── logs
 │   ├── README.md
-│   ├── run_client.py
-│   ├── run_service.py
+│   ├── run.py
+│   ├── grpc_run.py
 │   └── test.py
+├── README.md
+├── QDModelServing.jpg
 
 
 ```

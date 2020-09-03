@@ -2,10 +2,13 @@ version: '2.3'
 services:
   tensorflowtts:
     build: .
+    ports:
+      - "9940-9949:9940-9949"
     volumes:
       - .:/workspace
     runtime: nvidia
     tty: true
-    command: /bin/bash
+    command: export PYTHONPATH=${PYTHONPATH}:../qd_serving; gunicorn -w 16 -b 0.0.0.0:9949 flask_run:app > flask_run.log
     environment:
-      - CUDA_VISIBLE_DEVICES
+      - CUDA_VISIBLE_DEVICES=0,1
+

@@ -2,10 +2,12 @@ version: '2.3'
 services:
   tensorflowtts:
     build: .
+    ports:
+      - "47260-47269:47260-47269"
     volumes:
       - .:/workspace
     runtime: nvidia
     tty: true
-    command: /bin/bash
+    command: export PYTHONPATH=${PYTHONPATH}:../model_serving; python run_service.py 47260 > run_service.log
     environment:
-      - CUDA_VISIBLE_DEVICES
+      - CUDA_VISIBLE_DEVICES=0,1

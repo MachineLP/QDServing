@@ -14,19 +14,19 @@ import grpc
 import json
 import multiprocessing
 from concurrent import futures
-from app.core.models import TTSModel
+#from app.core.models import TTSModel
 from app.utils.logging import logging
 from app.grpc import call_ant_pb2_grpc, call_ant_pb2
 
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
-tts_model = TTSModel()
+#tts_model = TTSModel()
 
 
 def inference(text):
-    mels, alignment_history, audios = tts_model.predict(text)
-    return 200, audios.tolist() 
-    # return 200, text
+    #mels, alignment_history, audios = tts_model.predict(text)
+    #return 200, audios.tolist() 
+    return 200, text
 
 class Greeter(call_ant_pb2_grpc.GreeterServicer):
 

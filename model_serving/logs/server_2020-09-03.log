@@ -1,0 +1,13 @@
+2020-09-03 09:19:52,501 - root - INFO - exec_day :2020-09-03, exec_hour :09, exec_minute :19
+2020-09-03 09:19:52,768 - root - INFO - -------grpc service start--------
+2020-09-03 09:19:52,769 - root - INFO - [::1]:47260
+2020-09-03 09:28:41,441 - root - INFO - start_get_data, url: 你好啊
+2020-09-03 09:28:41,442 - root - ERROR - fail_get_data, time: 1.5735626220703125e-05s, data_size: 3, url: 你好啊
+2020-09-03 09:28:42,975 - root - INFO - start_get_data, url: 你好啊
+2020-09-03 09:28:42,975 - root - ERROR - fail_get_data, time: 2.1457672119140625e-06s, data_size: 3, url: 你好啊
+2020-09-03 09:28:44,358 - root - INFO - start_get_data, url: 你好啊
+2020-09-03 09:28:44,358 - root - ERROR - fail_get_data, time: 1.9073486328125e-06s, data_size: 3, url: 你好啊
+2020-09-03 09:31:02,675 - root - INFO - start_get_data, url: 
+2020-09-03 09:31:02,675 - root - ERROR - fail_get_data, time: 2.1457672119140625e-06s, data_size: 0, url: 
+2020-09-03 09:31:13,736 - root - INFO - start_get_data, url: 你好啊
+2020-09-03 09:31:13,736 - root - ERROR - fail_get_data, time: 1.9073486328125e-06s, data_size: 3, url: 你好啊

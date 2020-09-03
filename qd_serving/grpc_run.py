@@ -14,6 +14,7 @@ import grpc
 import json
 import multiprocessing
 from concurrent import futures
+from conf.config import config
 from app.utils.logging import logging
 from app.core.hash_ring import HashRing
 from app.grpc.grpc_client import get_res_by_grpc

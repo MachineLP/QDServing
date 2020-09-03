@@ -12,8 +12,8 @@ import os
 import sys
 import json
 import time 
-from config.config import config
-from app.tils.logging import logging
+from conf.config import config
+from app.utils.logging import logging
 from flask_restful import Resource,Api
 from app.core.hash_ring import HashRing
 from app.grpc.grpc_client import get_res_by_grpc

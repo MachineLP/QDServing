@@ -1,8 +1,6 @@
 
 import time
 import grpc
-from app.config.config import *
-from app.exts.common import *
 from app.utils.logging import logging
 from app.grpc import call_ant_pb2_grpc, call_ant_pb2
 
@@ -11,7 +9,7 @@ from app.grpc import call_ant_pb2_grpc, call_ant_pb2
 # 获取图片特征值，通过grpc远程调用
 def get_res_by_grpc(grpc_host, text):
 
-    logger.info("start_call_grpc, grpc_host: {}, url: {}".format( grpc_host, url ) )
+    logging.info("start_call_grpc, grpc_host: {}, url: {}".format( grpc_host, text ) )
 
     start = time.time()
     channel = grpc.insecure_channel(grpc_host)
@@ -20,9 +18,9 @@ def get_res_by_grpc(grpc_host, text):
     end = time.time()
 
     if response.code == 200:
-        logging.info("success_data_by_grpc, time: {}s, size: {}, url: {}".format( (end-start), len(response.data), url) )
+        logging.info("success_data_by_grpc, time: {}s, size: {}, url: {}".format( (end-start), len(response.data), text) )
     else:
-        logging.error("fail_call_grpc, time: {}s, data_size: {}, url: {}".format( (end-start), len(response.data), url) )
+        logging.error("fail_call_grpc, time: {}s, data_size: {}, url: {}".format( (end-start), len(response.data), text) )
 
     return response.data
 
@@ -31,7 +29,7 @@ def get_res_by_grpc(grpc_host, text):
 # 获取排序top n，通过grpc远程调用
 def get_sort_by_grpc(grpc_host, resp_data, list_url):
 
-    logger.info("start_call_grpc, grpc_host: {}, url: {}".format( grpc_host, url ) )
+    logging.info("start_call_grpc, grpc_host: {}, url: {}".format( grpc_host, list_url ) )
     start = time.time()
     channel = grpc.insecure_channel(grpc_host)
     stub = call_ant_pb2_grpc.GreeterStub(channel)

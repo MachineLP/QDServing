@@ -36,7 +36,7 @@ class Greeter(call_ant_pb2_grpc.GreeterServicer):
         code, audios_data = inference(request.name)
         end = time.time()
 
-        if code == 0:
+        if code == 200:
             logging.info("success_get_data, time: {}s, data_size: {}, url: {}".format( (end - start), len(audios_data), request.name) )
         else:
             logging.error("fail_get_data, time: {}s, data_size: {}, url: {}".format( (end - start), len(audios_data), request.name) )

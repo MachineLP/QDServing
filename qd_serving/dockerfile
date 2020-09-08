@@ -1,5 +1,5 @@
 
-FROM python:3.7
+FROM python:3.7.5-slim
 RUN apt-get update
 RUN apt-get install -y zsh tmux wget git libsndfile1
 RUN pip --default-timeout=600 install ipython && \

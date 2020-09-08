@@ -16,3 +16,4 @@ grpc服务测试:
 python grpc_run_client.py
 ```
 
+## 支持docker部署

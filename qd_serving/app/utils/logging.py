@@ -16,7 +16,7 @@ exec_hour = time.strftime('%H', local_time)
 exec_minute = time.strftime('%M', local_time)
 
 fmt_str = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-logging.basicConfig( level=logging.INFO, format=fmt_str, filename=config.LOG_PATH.format(exec_day) )
+# logging.basicConfig( level=logging.INFO, format=fmt_str, filename=config.LOG_PATH.format(exec_day) )
 log_file_handler = logging.handlers.TimedRotatingFileHandler(config.LOG_PATH, when='D', interval=1, backupCount=3)
 log_file_handler.suffix = "%Y%m%d_%H%M%S.log"
 log_file_handler.setLevel(logging.INFO)

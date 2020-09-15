@@ -6,9 +6,8 @@ services:
       - "9940-9949:9940-9949"
     volumes:
       - .:/workspace
-    runtime: nvidia
     tty: true
-    command: export PYTHONPATH=${PYTHONPATH}:../qd_serving; gunicorn -w 16 -b 0.0.0.0:9949 flask_run:app > flask_run.log
+    command: gunicorn -w 16 -b 0.0.0.0:9949 flask_run:app > flask_run.log
     environment:
       - CUDA_VISIBLE_DEVICES=0,1
 

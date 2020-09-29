@@ -2,6 +2,7 @@ version: '2.3'
 services:
   tensorflowtts:
     build: .
+    restart: always
     ports:
       - "47260-47269:47260-47269"
     volumes:

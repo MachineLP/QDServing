@@ -3,7 +3,7 @@
 ### 代码目录
 ```
 .
-├── model_serving             # ml模型服务（gRPC服务）
+├── modelServing             # ml模型服务（gRPC服务）
 │   ├── app
 │   ├── conf
 │   ├── logs
@@ -11,7 +11,7 @@
 │   ├── run_client.py
 │   ├── run_service.py
 │   └── test.py
-├── qd_serving                # 负载均衡、业务服务（flask/gRPC服务）
+├── serving                # 负载均衡、业务服务（flask/gRPC服务）
 │   ├── app
 │   ├── conf
 │   ├── logs

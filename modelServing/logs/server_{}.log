@@ -1,0 +1,5 @@
+2020-12-16 16:45:59,758 - root - INFO - exec_day :2020-12-16, exec_hour :16, exec_minute :45
+2020-12-16 16:46:00,215 - root - INFO - -------grpc service start--------
+2020-12-16 16:46:00,216 - root - INFO - [::1]:47260
+2020-12-16 16:47:50,486 - root - INFO - start_get_data, url: 你好啊
+2020-12-16 16:47:50,487 - root - INFO - success_get_data, time: 8.106231689453125e-06s, data_size: 3, url: 你好啊

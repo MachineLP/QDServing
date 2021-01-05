@@ -1,0 +1,11 @@
+2020-12-16 16:46:32,642 - root - INFO - exec_day :2020-12-16, exec_hour :16, exec_minute :46
+2020-12-16 16:46:33,112 - werkzeug - INFO -  * Running on http://0.0.0.0:9959/ (Press CTRL+C to quit)
+2020-12-16 16:46:33,114 - werkzeug - INFO -  * Restarting with stat
+2020-12-16 16:46:33,176 - root - INFO - exec_day :2020-12-16, exec_hour :16, exec_minute :46
+2020-12-16 16:46:33,503 - werkzeug - WARNING -  * Debugger is active!
+2020-12-16 16:46:33,512 - werkzeug - INFO -  * Debugger PIN: 288-578-517
+2020-12-16 16:47:50,473 - root - INFO - [TTSInference] [post] request.json:{'content': '你好啊'}
+2020-12-16 16:47:50,473 - root - INFO - [TTSInference] [post] text:你好啊
+2020-12-16 16:47:50,474 - root - INFO - start_call_grpc, grpc_host: localhost:47260, url: 你好啊
+2020-12-16 16:47:50,487 - root - INFO - success_data_by_grpc, time: 0.013256072998046875s, size: 3, url: 你好啊
+2020-12-16 16:47:50,489 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2020 16:47:50] "[37mPOST /infer HTTP/1.1[0m" 200 -
